@@ -1,0 +1,70 @@
+# CICD Repository .gitignore
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Node modules (if any)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Test results
+test-results/
+junit.xml
+
+# Docker volumes
+docker-volumes/
+
+# Secrets and sensitive files
+secrets/
+*.key
+*.pem
+*.p12
+*.jks
+
+# Local configuration
+local-config/
