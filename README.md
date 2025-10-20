@@ -1,8 +1,8 @@
-# 🚀 Kaiburr CICD Pipeline Repository
+# CICD Pipeline Repository
 
 This repository contains all CI/CD pipeline configurations, scripts, and documentation for the Kaiburr Task Management System.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Kaiburr_CICD/
@@ -12,8 +12,21 @@ Kaiburr_CICD/
 ├── docs/               # Documentation
 └── README.md           # This file
 ```
+## CI/CD (Proof)
 
-## 🎯 Project Repositories
+
+[![Backend CI](https://img.shields.io/github/actions/workflow/status/zeusXtruealpha/Kaiburr_Task_1/ci.yml?label=backend%20ci)](https://github.com/zeusXtruealpha/Kaiburr_Task_1/actions)
+[![Backend Docker](https://img.shields.io/github/actions/workflow/status/zeusXtruealpha/Kaiburr_Task_1/docker.yml?label=backend%20docker)](https://github.com/zeusXtruealpha/Kaiburr_Task_1/actions)
+[![Frontend CI](https://img.shields.io/github/actions/workflow/status/zeusXtruealpha/Kaiburr_Task_3/ci.yml?label=frontend%20ci)](https://github.com/zeusXtruealpha/Kaiburr_Task_3/actions)
+[![Frontend Docker](https://img.shields.io/github/actions/workflow/status/zeusXtruealpha/Kaiburr_Task_3/docker.yml?label=frontend%20docker)](https://github.com/zeusXtruealpha/Kaiburr_Task_3/actions)
+
+
+### Required Secrets (configured in both app repos)
+
+- `DOCKERHUB_USERNAME` = `zeus45`
+- `DOCKERHUB_TOKEN` = Docker Hub PAT
+
+## Project Repositories
 
 - **Backend**: `https://github.com/zeusXtruealpha/Kaiburr_Task_1`
 - **Frontend**: `https://github.com/zeusXtruealpha/Kaiburr_Task_3`
@@ -21,24 +34,24 @@ Kaiburr_CICD/
 
 ## 🛠️ Features
 
-### ✅ CI/CD Pipelines
+### CI/CD Pipelines
 - **Backend CI**: Maven build, test, security scan, artifact upload
 - **Frontend CI**: Node.js build, TypeScript check, security scan
 - **Deployment**: Multiple deployment options (GitHub Releases, Cloud Storage)
 - **Docker Support**: Both with and without Docker configurations
 
-### 🔧 Setup Scripts
+### Setup Scripts
 - **Backend Setup**: `scripts/setup-backend-no-docker.sh/.bat`
 - **Frontend Setup**: `scripts/setup-frontend-no-docker.sh/.bat`
 - **Docker Setup**: `scripts/setup-backend.sh/.bat`, `scripts/setup-frontend.sh/.bat`
 
-### 🐳 Docker Configurations
+### Docker Configurations
 - **Backend Dockerfile**: `docker/Dockerfile.backend`
 - **Frontend Dockerfile**: `docker/Dockerfile.frontend`
 - **Docker Compose**: `docker/docker-compose.yml`
 - **Nginx Config**: `docker/nginx.conf`, `docker/nginx-proxy.conf`
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Setup Backend Repository
 ```bash
@@ -91,23 +104,6 @@ git push origin main
 - `workflows/frontend-ci.yml` - CI pipeline with Docker
 - `workflows/frontend-deploy.yml` - Deployment pipeline
 
-## 🔐 Required Secrets
-
-### Backend Repository Secrets
-- `AWS_ACCESS_KEY_ID` - AWS access key for S3 deployment
-- `AWS_SECRET_ACCESS_KEY` - AWS secret key for S3 deployment
-- `AZURE_STORAGE_ACCOUNT` - Azure storage account name
-- `AZURE_STORAGE_KEY` - Azure storage key
-- `GCP_SA_KEY` - Google Cloud service account key
-
-### Frontend Repository Secrets
-- `NETLIFY_AUTH_TOKEN` - Netlify authentication token
-- `NETLIFY_SITE_ID` - Netlify site ID
-- `VERCEL_TOKEN` - Vercel authentication token
-- `VERCEL_ORG_ID` - Vercel organization ID
-- `VERCEL_PROJECT_ID` - Vercel project ID
-
-## 🐳 Docker Deployment
 
 ### Local Development
 ```bash
@@ -131,8 +127,6 @@ docker build -f docker/Dockerfile.frontend -t your-registry/frontend:latest .
 docker-compose -f docker/docker-compose.yml -f docker/docker-compose.prod.yml up -d
 ```
 
-## 📊 Monitoring
-
 ### GitHub Actions
 - Go to your repository → Actions tab
 - View workflow runs and logs
@@ -142,44 +136,8 @@ docker-compose -f docker/docker-compose.yml -f docker/docker-compose.prod.yml up
 - Backend: JAR files uploaded to GitHub Releases
 - Frontend: Static files deployed to various platforms
 
-## 🔧 Troubleshooting
 
-### Common Issues
-1. **MongoDB Connection**: Ensure MongoDB is running locally for tests
-2. **Node Modules**: Don't commit `node_modules/` - it's in `.gitignore`
-3. **Docker Issues**: Use no-Docker workflows if Docker services are down
-4. **Secrets**: Ensure all required secrets are configured in repository settings
 
-### Getting Help
-- Check workflow logs in GitHub Actions
-- Review the documentation in `docs/` folder
-- Check the troubleshooting section in individual workflow files
 
-## 📚 Documentation
 
-- [Quick Start Guide](QUICK_START.md)
-- [No Docker Guide](NO_DOCKER_GUIDE.md)
-- [Docker Setup Guide](DOCKER_GUIDE.md)
-- [Deployment Guide](DEPLOYMENT_GUIDE.md)
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test the workflows
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🎉 Success!
-
-Your CI/CD pipeline is now ready! The workflows will automatically:
-- ✅ Build and test your code
-- ✅ Run security scans
-- ✅ Deploy to multiple platforms
-- ✅ Generate reports and artifacts
-
-Happy coding! 🚀
