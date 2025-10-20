@@ -14,11 +14,19 @@ Kaiburr_CICD/
 ```
 ## CI/CD (Proof)
 
+**BACKEND**
+- <img width="962" height="290" alt="image" src="https://github.com/user-attachments/assets/dc034de2-c3fe-4609-ae0b-0c97c9a7bda4" />
+- <img width="1313" height="704" alt="image" src="https://github.com/user-attachments/assets/f85245ef-d0df-4e61-a617-2fe2dd4a4623" />
+- <img width="1306" height="917" alt="image" src="https://github.com/user-attachments/assets/cb4a4157-e6b5-4aae-a912-1fbabd0bafbe" />
+- Check run URL: https://api.github.com/repos/zeusXtruealpha/Kaiburr_Task_1/check-runs/53166312808
+- Check run HTML: https://github.com/zeusXtruealpha/Kaiburr_Task_1/runs/53166312808
+- <img width="1328" height="765" alt="image" src="https://github.com/user-attachments/assets/64ea54b2-4678-4ab3-9af2-f6a3449703a5" />
 
-[![Backend CI](https://img.shields.io/github/actions/workflow/status/zeusXtruealpha/Kaiburr_Task_1/ci.yml?label=backend%20ci)](https://github.com/zeusXtruealpha/Kaiburr_Task_1/actions)
-[![Backend Docker](https://img.shields.io/github/actions/workflow/status/zeusXtruealpha/Kaiburr_Task_1/docker.yml?label=backend%20docker)](https://github.com/zeusXtruealpha/Kaiburr_Task_1/actions)
-[![Frontend CI](https://img.shields.io/github/actions/workflow/status/zeusXtruealpha/Kaiburr_Task_3/ci.yml?label=frontend%20ci)](https://github.com/zeusXtruealpha/Kaiburr_Task_3/actions)
-[![Frontend Docker](https://img.shields.io/github/actions/workflow/status/zeusXtruealpha/Kaiburr_Task_3/docker.yml?label=frontend%20docker)](https://github.com/zeusXtruealpha/Kaiburr_Task_3/actions)
+**FRONTEND**
+- <img width="959" height="225" alt="image" src="https://github.com/user-attachments/assets/685a0f7b-3327-4e43-b12d-bfcab75813f3" />
+- <img width="1297" height="779" alt="image" src="https://github.com/user-attachments/assets/2bdff0da-6995-4ff8-9350-c0f1337268c2" />
+- <img width="1295" height="461" alt="image" src="https://github.com/user-attachments/assets/5adad5e3-a382-4d51-94d6-d641f99d2ed7" />
+- Artifact download URL: https://github.com/zeusXtruealpha/Kaiburr_Task_3/actions/runs/18649975367/artifacts/4316149236
 
 
 ### Required Secrets (configured in both app repos)
@@ -126,18 +134,3 @@ docker build -f docker/Dockerfile.frontend -t your-registry/frontend:latest .
 # Deploy to production
 docker-compose -f docker/docker-compose.yml -f docker/docker-compose.prod.yml up -d
 ```
-
-### GitHub Actions
-- Go to your repository → Actions tab
-- View workflow runs and logs
-- Check test results and deployment status
-
-### Build Artifacts
-- Backend: JAR files uploaded to GitHub Releases
-- Frontend: Static files deployed to various platforms
-
-
-
-
-
-
