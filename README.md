@@ -28,6 +28,9 @@ Kaiburr_CICD/
 - <img width="1295" height="461" alt="image" src="https://github.com/user-attachments/assets/5adad5e3-a382-4d51-94d6-d641f99d2ed7" />
 - Artifact download URL: https://github.com/zeusXtruealpha/Kaiburr_Task_3/actions/runs/18649975367/artifacts/4316149236
 
+**DOCKER**
+- <img width="1920" height="862" alt="image" src="https://github.com/user-attachments/assets/51ccfefc-61bd-4825-a532-a74ff216d035" />
+
 
 ### Required Secrets (configured in both app repos)
 
